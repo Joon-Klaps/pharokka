@@ -649,7 +649,7 @@ def validate_custom_hmm(filename):
     if filename.endswith(suffix) is True:
         logger.info(f"{filename} checked.")
     else:
-        logger.exit(
+        logger.error(
             f"{filename} does not end with .h3m . Please check your --custom_hmm parameter or use create_custom_hmm.py to create a custom HMM profile."
         )
 
